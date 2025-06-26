@@ -6,7 +6,7 @@
   <style>
     body { font-family: sans-serif; background: #f4f4f4; margin: 0; padding: 0; }
     header { background: #333; color: white; padding: 20px; text-align: center; }
-    nav a { margin: 10px; color: white; text-decoration: none; border-color: blue; }
+    nav a { margin: 10px; color: white; text-decoration: none; }
     main { padding: 20px; }
     pre { background: #eee; padding: 10px; border-radius: 5px; }
     footer { background: #222; color: white; text-align: center; padding: 10px; }
@@ -41,6 +41,21 @@
     </pre>
   </main>
 
+<h2>Связаться с нами</h2>
+
+<form action="https://formsubmit.io/send/your@email.com" method="POST">
+  <input type="hidden" name="_redirect" value="https://bogat008.github.io/codestart/thankyou.html">
+  
+  <label>Email: koreatjk@gmail.com</label><br />
+  <input type="email" name="email" required><br /><br />
+
+  <label>Сообщение:</label><br />
+  <textarea name="message" rows="5" required></textarea><br /><br />
+
+  <button type="submit">Отправить</button>
+</form>
+
+  
   <footer>
     © 2025 CodeStart. Учись, создавай, зарабатывай.
   </footer>
