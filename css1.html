@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>CodeStart — Урок 2: Основы CSS</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    header {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    main {
+      background: white;
+      padding: 30px;
+      margin-top: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      color: #333;
+    }
+    p {
+      line-height: 1.6;
+      font-size: 18px;
+    }
+    pre {
+      background: #eee;
+      padding: 15px;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-size: 16px;
+    }
+    .example-box {
+      background: #f0f8ff;
+      border: 1px solid #a0c8ff;
+      padding: 15px;
+      margin: 20px 0;
+      border-radius: 8px;
+      font-family: monospace;
+      white-space: pre-wrap;
+      font-size: 16px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #333;
+      color: white;
+      margin-top: 40px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CodeStart</h1>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="css.html">CSS</a>
+      <a href="js.html">JavaScript</a>
+      <a href="about.html">О проекте</a>
+      <a href="contact.html">Контакты</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Урок 2: Основы CSS</h2>
+
+    <h3>1. Что такое CSS?</h3>
+    <p>CSS (Cascading Style Sheets) — каскадные таблицы стилей, язык, который управляет внешним видом веб-страниц.</p>
+    
+    <h3>2. Как подключать CSS к HTML?</h3>
+    <p>Стили можно добавить тремя способами:</p>
+    <ul>
+      <li><strong>Inline</strong> — прямо в теге HTML (не рекомендуется):<br>
+        <code>&lt;p style="color: red;"&gt;Текст красного цвета&lt;/p&gt;</code></li>
+      <li><strong>Internal</strong> — внутри тега <code>&lt;style&gt;</code> в <code>&lt;head&gt;</code> (как здесь):<br>
+        <code>&lt;style&gt; p { color: blue; } &lt;/style&gt;</code></li>
+      <li><strong>External</strong> — подключить отдельный CSS-файл:<br>
+        <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code></li>
+    </ul>
+    
+    <h3>3. Пример CSS-правил</h3>
+    <p>Вот пример, который изменяет цвет и размер заголовка и текста:</p>
+    <pre>
+h1 {
+  color: blue;
+  font-size: 32px;
+  text-align: center;
+}
+
+p {
+  color: gray;
+  font-size: 18px;
+}
+    </pre>
+    
+    <h3>4. Inline, Internal и External стили — кратко</h3>
+    <p>Inline стили применяются к отдельному элементу и имеют самый высокий приоритет.</p>
+    <p>Internal стили применяются ко всей странице, задаются в <code>&lt;style&gt;</code> в <code>&lt;head&gt;</code>.</p>
+    <p>External стили — самый удобный и масштабируемый способ — это отдельный файл с расширением <code>.css</code>, который подключается в HTML.</p>
+
+    <h3>5. Простое задание</h3>
+    <p>Попробуй изменить стиль заголовка и параграфа в этом уроке, например, поменяй цвета и размер шрифта. Сделай так, чтобы твой сайт выглядел красиво и удобно для чтения.</p>
+
+    <div class="example-box">
+      /* Пример изменения стиля */<br>
+      h1 { color: darkgreen; }<br>
+      p { font-size: 20px; color: #555555; }
+    </div>
+
+    <p>Если хочешь, могу помочь с проверкой твоих изменений — просто пришли код!</p>
+  </main>
+
+  <footer>
+    © 2025 CodeStart. Учись, создавай, зарабатывай.
+  </footer>
+</body>
+</html>
